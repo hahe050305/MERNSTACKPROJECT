@@ -1,0 +1,67 @@
+/* Existing App Styles */
+.app {
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Loading Screen Styles */
+.loading-screen {
+  position: fixed; /* Cover the entire viewport */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  color: #ffffff; /* White text */
+  display: flex; /* Center content */
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  z-index: 9999; /* Ensure it’s on top of other elements */
+  font-family: 'Arial', sans-serif; /* Professional font */
+  text-align: center; /* Center text */
+  transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+/* Motivational Text (Quotes) Styles */
+.motivational-text {
+  font-size: 1.5em; /* Slightly larger text */
+  margin-top: 20px; /* Spacing from the loader */
+  padding: 20px;
+  border-radius: 5px; /* Rounded corners */
+  background-color: rgba(255, 255, 255, 0.9); /* Almost fully opaque white background */
+  color: yellow; /* Black text color */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  max-width: 80%; /* Limit width on larger screens */
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Slight text shadow to give a glow effect */
+  animation: glow 2s ease-in-out infinite alternate; /* Apply glow animation */
+}
+
+/* Glow animation effect */
+@keyframes glow {
+  from {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.5), 0 0 30px rgba(255, 255, 255, 0.5);
+  }
+  to {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 1), 0 0 40px rgba(255, 255, 255, 1), 0 0 60px rgba(255, 255, 255, 1);
+  }
+}
+
+/* Loader Animation */
+.loader {
+  border: 8px solid #f3f3f3; /* Light gray */
+  border-top: 8px solid #3498db; /* Blue color */
+  border-radius: 50%;
+  width: 50px; /* Size of the loader */
+  height: 50px; /* Size of the loader */
+  animation: spin 2s linear infinite; /* Spin animation */
+  margin-bottom: 20px; /* Spacing between loader and text */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

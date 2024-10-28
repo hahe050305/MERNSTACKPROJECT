@@ -1,0 +1,131 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/public/images/truck_3.jpg'); /* Adjust path to match the image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+  }
+  
+  .login-container {
+    width: 850px;
+    padding: 40px;
+    margin: 200px;
+    margin-left: 250px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h2 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  
+  .input-group label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 3px solid gold;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+  
+  .sign-in-options {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .social-button {
+    width: 48px;
+    height: 48px;
+    background-color: wheat;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  
+  .social-button img {
+    width: 34px;
+    height: 34px;
+  }
+  
+  .social-button:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .retry-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  
+  .retry-button:hover {
+    background-color: #e53935;
+  }
+  
+  .error {
+    color: red;
+    margin-bottom: 10px;
+  }
+
+  .back-button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 60px;
+    margin: auto;
+
+  }
+  

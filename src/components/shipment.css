@@ -1,0 +1,86 @@
+/* shipment.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('/public/images/truck_image.jpg') no-repeat center center fixed; /* Add truck image */
+    background-size: cover; /* Cover the entire background */
+  }
+  
+  .form-container {
+    background: rgba(255, 255, 255, 0.7); /* Slightly transparent white background */
+    border-radius: 10px; /* Rounded edges for the form */
+    max-width: 600px; /* Set max width for the form */
+    margin: 50px auto; /* Center the form */
+    padding: 20px; /* Add padding */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    overflow-y: auto; /* Enable vertical scrolling */
+    max-height: 80vh; /* Limit the height of the form */
+  }
+  
+  /* Hide scrollbar for the form */
+  .form-container::-webkit-scrollbar {
+    display: none; /* Hides the scrollbar */
+  }
+  
+  /* Style for input and textarea */
+  input[type="text"],
+  input[type="date"],
+  input[type="time"],
+  input[type="number"],
+  select,
+  textarea {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding for input */
+    margin: 10px 0; /* Margin between inputs */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 20px; /* Rounded edges */
+    font-size: 16px; /* Font size */
+  }
+  
+  /* Style for labels */
+  label {
+    font-weight: bold; /* Bold labels */
+    margin-bottom: 5px; /* Space below labels */
+    display: block; /* Block display for labels */
+  }
+  
+  /* Style for buttons */
+  .button-group {
+    display: flex; /* Flex for button alignment */
+    justify-content: space-between; /* Space between buttons */
+    margin-top: 20px; /* Space above button group */
+  }
+  
+  button {
+    padding: 10px 20px; /* Padding for buttons */
+    border: none; /* No border */
+    border-radius: 20px; /* Rounded edges */
+    background-color: #007BFF; /* Button color */
+    color: white; /* Text color */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Darker on hover */
+  }
+  
+  .back-button {
+    position: fixed; /* Fixed position */
+    top: 20px; /* Distance from the top */
+    left: 20px; /* Distance from the left */
+    padding: 10px 15px; /* Padding for button */
+    background-color: #007BFF; /* Button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 20px; /* Rounded edges */
+    cursor: pointer; /* Pointer on hover */
+    z-index: 1000; /* Ensures it stays above other content */
+  }
+  
+  .back-button:hover {
+    background-color: #0056b3; /* Darker on hover */
+  }
+  
+  

@@ -1,0 +1,160 @@
+/* General Styles for Company Details Page */
+.company-details-page {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    position: relative; /* Allows positioning of the background image */
+    min-height: 100vh; /* Ensures the page takes at least the full viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Full background truck image without blur */
+.company-details-page::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/public/images/truck_image.jpg'); /* Path to your truck image */
+    background-size: cover; /* Ensures the image covers the entire area */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the image */
+    z-index: -1; /* Sends the background behind other content */
+    opacity: 1; /* No transparency for the image */
+}
+
+/* Back Button and Other Action Buttons */
+.back-button, .related-companies-toggle, .book-now {
+    padding: 10px 15px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.back-button:hover, .related-companies-toggle:hover, .book-now:hover {
+    background-color: #0056b3;
+}
+
+.company-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ddd; 
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
+    width: 100%;
+    max-width: 700px; /* Max width for larger screens */
+    box-shadow: none; /* Remove shadow */
+}
+
+.company-logo {
+    width: 150px;
+    height: auto;
+}
+
+.company-info {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.rating {
+    margin: 10px 0;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+}
+
+/* Styles for Related Companies */
+.related-companies {
+    margin-top: 30px;
+}
+
+.related-companies-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.related-companies-toggle {
+    width: 200px;
+    margin: 20px auto;
+    display: block;
+}
+
+/* Hide Scrollbar Visibility */
+.related-companies-list {
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+}
+
+.related-companies-list::-webkit-scrollbar {
+    width: 0; /* Chrome, Safari, Opera */
+    display: none;
+}
+
+.related-companies-list::-webkit-scrollbar-track {
+    background: transparent; /* No visible track */
+}
+
+.related-companies-list::-webkit-scrollbar-thumb {
+    background: transparent; /* No visible thumb */
+}
+
+/* Long page scrollable section */
+.company-details-page {
+    overflow-y: auto;
+    height: 100%;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.company-details-page::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.company-details-page {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
+}
+
+/* Center elements over the background image */
+.categories {
+    position: relative; /* Stays on top of the background image */
+    z-index: 1; /* Ensures these elements are on top of the background */
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    max-width: 900px;
+    padding: 15px;
+}
+
+.category-item {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    border-radius: 25px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.category-item:hover {
+    background-color: #0056b3;
+}
